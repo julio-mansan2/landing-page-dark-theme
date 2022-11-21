@@ -1,0 +1,70 @@
+@media (max-width: 900px) {
+    body {
+        width: 100%;
+    }
+
+    br {
+        display: none;
+    }
+
+    .header {
+        padding: 5%;
+    }
+    
+    .intro {
+        padding: 0 10%;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits p {
+        font-size: 1rem;
+    }
+
+    .stay-productive {
+        flex-direction: column;
+    }
+
+    .stay-productive p {
+        font-size: 1rem;
+    }
+
+    .quotes {
+        flex-direction: column;
+    }
+
+    .quotes img {
+        width: 10%;
+    }
+
+    .quotes {
+        padding: 3.1rem;
+    }
+
+    .quotes::before {
+        top: 0;
+    }
+
+    .inscricao {
+        left: 10%;
+        right: 10%;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        justify-items: flex-start;
+        padding-top: 40%;
+    }
+
+    .footer .social-media {
+        justify-self: center;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .footer {
+        padding-top: 20%;
+    }
+}

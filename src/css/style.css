@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-area: header;
+    padding: 5% 7%;
+    background-color: var(--sign-up-background);
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.header .header-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 3.1rem;
+}
+
+.header-menu ul a {
+    color: var(--white);
+    transition: 0.2s;
+}
+
+.header-menu ul a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20%;
+    text-align: center;
+}
+
+.intro img {
+    margin-bottom: 2.5rem;
+}
+
+.intro h1 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+}
+
+.intro p {
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2.1rem;
+}
+
+.intro a  {
+    color:  var(--white);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    padding: 1.25rem 6.25rem;
+    background-image: linear-gradient(to right, var(--cyan) , var(--blue));
+    border-radius: 50px;
+    transition: 0.4s;
+}
+
+.intro a:hover {
+    filter: brightness(120%);
+    background-color: var(--cyan);
+}
+
+.main {
+    grid-area: main;
+    background-color: var(--main-background);
+    padding: 7%;
+    position: relative;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-bottom: 6.25rem;
+}
+
+.benefits div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--white);
+}
+
+.benefits div img {
+    margin-bottom: 1.25rem;
+    height: 5.5rem;
+}
+
+.benefits div h2 {
+    margin-bottom: 0.6rem;
+}
+
+.stay-productive {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    gap: 3.1rem;
+    margin-bottom: 9.3rem;
+}
+
+.stay-productive h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.stay-productive p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 1.25rem;
+}
+
+.how-fylo-works {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.how-fylo-works a {
+    color: var(--cyan);
+    font-family: 'Raleway', sans-serif;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.how-fylo-works a:hover {
+    color: var(--white);
+}
+
+.quotes {
+    display: flex;
+    gap: 3.1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 9.3rem;
+    position: relative;
+}
+
+.quotes::before {
+    content: url(../images/bg-quotes.png);
+    position: absolute;
+    top: -10%;
+    left: -2%;
+}
+
+.quotes img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.quotes article {
+    padding: 2.5rem 1.8rem;
+    background-color: var(--testimonials-background);
+    color: var(--white);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.quotes article p {
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.quotes article .testimonials {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.testimonials h3 {
+    font-size: 0.8rem;
+}
+
+.testimonials span {
+    font-size: 0.75rem;
+}
+
+.inscricao {
+    position: absolute;
+    bottom: -5%;
+    padding: 2.5rem;
+    background-color: var(--sign-up-background);
+    left: 25%;
+    right: 25%;
+    color: var(--white);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.inscricao h2 {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.inscricao p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.inscricao form {
+    display: flex;
+    margin-bottom: 0.6rem;
+}
+
+#email {
+    padding: 0.6rem 1.25rem;
+    width: 70%;
+    border-radius: 100px;
+    border: 1px solid var(--sign-up-background);
+    margin-right: 0.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#submit {
+    padding: 0.6rem 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    background-image: linear-gradient(to right, var(--cyan) , var(--blue));
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+#submit:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+.error-message {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    margin-left: 1.25rem;
+    color: var(--red);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--footer-background);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 15% 5% 10%;
+    justify-items: center;
+    position: relative;
+    gap: 1.25rem;
+}
+
+
+.logo-footer {
+    position: absolute;
+    top: 23%;
+}
+
+.contact div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    color: var(--white);
+}
+
+.contact-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-2 div {
+    display: flex;
+    gap: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    color: var(--white);
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-menu li a {
+    color:  var(--white);
+    font-size: 0.8rem;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s;
+}
+
+.footer-menu li a:hover {
+    font-weight: 700;
+}
+
+.social-media {
+    display: flex;
+    gap: 1.25rem;
+    align-self: flex-start;
+}
+
+.social-media a {
+    color: var(--white);
+    padding: 0.6rem;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: var(--cyan);
+    border-color: var(--cyan);
+}
+
+.valido {
+    display: none;
+}
+
+.aparecer {
+    display: block;
+}
